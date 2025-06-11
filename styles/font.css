@@ -1,0 +1,23 @@
+
+@font-face {
+    font-family: "Constan Regular";
+    src: url("../fonts/constan.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Constan Bold";
+    src: url("../fonts/constanb.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Constan Italic";
+    src: url("../fonts/constani.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Constan BoldItalic";
+    src: url("../fonts/constanz.ttf") format("truetype");
+}

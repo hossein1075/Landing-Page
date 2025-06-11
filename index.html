@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/font.css">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="icon" type="image/x-icon" href="./images/maki_fitness-centre.svg">
+    <title>fitness</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="nav">
+                <div class="nav_logo">
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M26.1 12.6V14.4L24.3 14.4V18H22.5V19.8H19.8V14.4H7.20002L7.20002 19.8H4.50002L4.50002 18H2.70002L2.70002 14.4H0.900024L0.900024 12.6H2.70002V8.99995H4.50002V7.19995H7.20002V12.6H19.8V7.19995H22.5V8.99995H24.3V12.6L26.1 12.6Z"
+                            fill="white" />
+                    </svg>
+                    <span class="nav_logo_text">Vyayamshala</span>
+                </div>
+                <div class="navbar navbar-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" id="btn-navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="nav_Menu">
+                    <ul class="nav_menu_lists">
+                        <li class="nav_menu_list"><a href="#" class="nav_menu_link">Home</a></li>
+                        <li class="nav_menu_list"><a href="#" class="nav_menu_link">About</a></li>
+                        <li class="nav_menu_list"><a href="#" class="nav_menu_link">Reviews</a></li>
+                        <li class="nav_menu_list dropdown" id="navbarScrollingDropdown" data-bs-toggle="dropdown">
+                            <a href="#" class="nav_menu_link dropdown-toggle">Services</a>
+                            <ul class="nav_dropdown_links dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="nav_dropdown_link dropdown-item" href="#">Action</a></li>
+                                <li><a class="nav_dropdown_link dropdown-item" href="#">Another action</a></li>
+                                <li><a class="nav_dropdown_link dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_menu_list"><a href="#" class="nav_menu_link">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="nav_toggle">
+                <div class="nav_Menu-desktop">
+                    <ul class="nav_menu_lists-desktop">
+                        <li class="nav_menu_list-desktop"><a href="#" class="nav_menu_link-desktop">Home</a></li>
+                        <li class="nav_menu_list-desktop"><a href="#" class="nav_menu_link-desktop">About</a></li>
+                        <li class="nav_menu_list-desktop"><a href="#" class="nav_menu_link-desktop">Reviews</a></li>
+                        <li class="nav_menu_list-desktop dropdown" id="navbarScrollingDropdown"
+                            data-bs-toggle="dropdown">
+                            <a href="#" class="nav_menu_link-desktop dropdown-toggle">Services</a>
+                            <ul class="nav_dropdown_links-desktop dropdown-menu"
+                                aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="nav_dropdown_link-desktop dropdown-item" href="#">Action</a></li>
+                                <li><a class="nav_dropdown_link-desktop dropdown-item" href="#">Another action</a></li>
+                                <li><a class="nav_dropdown_link-desktop dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_menu_list-desktop"><a href="#" class="nav_menu_link-desktop">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav_toggle_icon" id="nav-remove">
+                    <button class="nav_toggle_icon_Btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="main_explain">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 order-md-2">
+                        <div class="main_explain_picture">
+                            <img class="main_explain_img" src="./images/Rectangle 1.png" alt="fitness-landing-page">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 order-md-1">
+                        <div class="main_explain_content">
+                            <h1 class="main_explain_title">Join the world of fitness.</h1>
+                            <p class="main_explain_text">Our aim is to bring more people into fitness so that every
+                                indivisual, family,society and whole nation.</p>
+                            <div class="main_explain_Btn">
+                                <button class="main_explain_Btn_left btn">Join Now</button>
+                                <div class="main_explain_Btn_right ">
+                                    <a href="#" class="main_explain_Btn_right_link">
+                                        <svg class="main_explain_Btn_right_icon" width="20" height="19"
+                                            viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.28556 1.00565C1.48491 0.905633 1.70871 0.861137 1.93234 0.87706C2.15597 0.892983 2.37076 0.968708 2.55306 1.0959L11.0843 7.0334C11.2423 7.14325 11.3711 7.28828 11.4599 7.45641C11.5488 7.62454 11.5951 7.81092 11.5951 8.00003C11.5951 8.18914 11.5488 8.37552 11.4599 8.54365C11.3711 8.71178 11.2423 8.8568 11.0843 8.96665L2.55306 14.9042C2.37082 15.0312 2.15614 15.1069 1.93263 15.1228C1.70911 15.1388 1.48542 15.0943 1.28614 14.9944C1.08686 14.8945 0.919715 14.743 0.803075 14.5565C0.686435 14.3701 0.624819 14.1559 0.625001 13.9375V2.06253C0.624766 1.84422 0.686297 1.63008 0.802831 1.44363C0.919366 1.25718 1.08639 1.10564 1.28556 1.00565Z"
+                                                fill="#333333" />
+                                        </svg>
+                                    </a>
+                                    <span class="main_explain_Btn_right_title">Watch video</span>
+                                </div>
+                            </div>
+                            <div class="main_explain_members">
+                                <div class="main_explain_member">
+                                    <img src="./images/7.png" alt="members" class="main_explain_member_img">
+                                    <span class="main_explain_member_title">
+                                        Years Experience
+                                    </span>
+                                </div>
+                                <div class="main_explain_member">
+                                    <img src="./images/25k+.png" alt="members" class="main_explain_member_img">
+                                    <span class="main_explain_member_title">
+                                        Happy customers
+                                    </span>
+                                </div>
+                                <div class="main_explain_member">
+                                    <img src="./images/95.png" alt="members" class="main_explain_member_img">
+                                    <span class="main_explain_member_title">
+                                        Gym Trainers
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="main_services">
+                <h3 class="main_services_header">Services</h3>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="main_services_left">
+                            <h2 class="main_services_left_title">We provide service that fits the best for you.</h2>
+                            <p class="main_services_left_context">Strive for greatness with the best, around the best
+                                and in the best fitness environment available in the city.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="main_services_right">
+                            <div class="main_services_right_sport">
+                                <div class="main_services_right_sport_image">
+                                    <img class="main_services_right_sport_img" src="./images/services/exercise 1.png"
+                                        alt="exercise">
+                                </div>
+                                <p class="main_services_right_sport_subtitle">Whole body fat loss</p>
+                            </div>
+                            <div class="main_services_right_sport">
+                                <div class="main_services_right_sport_image">
+                                    <img class="main_services_right_sport_img" src="./images/services/workout (2) 1.png"
+                                        alt="workout">
+                                </div>
+                                <p class="main_services_right_sport_subtitle">Zumba</p>
+                            </div>
+                            <div class="main_services_right_sport">
+                                <div class="main_services_right_sport_image">
+                                    <img class="main_services_right_sport_img" src="./images/services/yoga 1.png"
+                                        alt="yoga">
+                                </div>
+                                <p class="main_services_right_sport_subtitle">Yoga</p>
+                            </div>
+                            <div class="main_services_right_sport">
+                                <div class="main_services_right_sport_image">
+                                    <img class="main_services_right_sport_img" src="./images/services/workout (1) 1.png"
+                                        alt="Bodybuilding">
+                                </div>
+                                <p class="main_services_right_sport_subtitle">Bodybuilding</p>
+                            </div>
+                            <div class="main_services_right_sport">
+                                <div class="main_services_right_sport_image">
+                                    <img class="main_services_right_sport_img" src="./images/services/lunges 1.png"
+                                        alt="Aerobcs">
+                                </div>
+                                <p class="main_services_right_sport_subtitle">Aerobcs</p>
+                            </div>
+                            <div class="main_services_right_sport">
+                                <div class="main_services_right_sport_image">
+                                    <img class="main_services_right_sport_img" src="./images/services/strongman 1.png"
+                                        alt="Free Weights">
+                                </div>
+                                <p class="main_services_right_sport_subtitle">Free Weights</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_services_links">
+                        <a href="#" class="main_services_link">See All</a>
+                    </div>
+            </section>
+            <section class="main_about">
+                <h1 class="main_about_title main_about_title--break">
+                    Stories of our <span class="main_about_title_span">Vyayamshala</span> Family
+                </h1>
+                <div class="main_about_icon">
+                    <a href="#" class="main_about_befor" id="pre">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.05 31.6667C22.801 31.6675 22.555 31.6126 22.33 31.5059C22.105 31.3992 21.9069 31.2434 21.75 31.05L13.7 21.05C13.4549 20.7518 13.3208 20.3777 13.3208 19.9917C13.3208 19.6056 13.4549 19.2316 13.7 18.9334L22.0333 8.93336C22.3162 8.59299 22.7227 8.37895 23.1634 8.33832C23.6042 8.29769 24.043 8.43379 24.3833 8.71669C24.7237 8.99959 24.9377 9.40611 24.9784 9.84682C25.019 10.2875 24.8829 10.7263 24.6 11.0667L17.15 20L24.35 28.9334C24.5538 29.178 24.6833 29.4759 24.7231 29.7918C24.7629 30.1077 24.7113 30.4284 24.5746 30.716C24.4378 31.0035 24.2215 31.2459 23.9514 31.4144C23.6812 31.5828 23.3684 31.6704 23.05 31.6667Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="main_about_next" id="next">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.95 31.6667C17.199 31.6675 17.445 31.6126 17.67 31.5059C17.895 31.3992 18.0931 31.2434 18.25 31.05L26.3 21.05C26.5452 20.7518 26.6792 20.3777 26.6792 19.9917C26.6792 19.6056 26.5452 19.2316 26.3 18.9334L17.9667 8.93336C17.6838 8.59299 17.2773 8.37895 16.8366 8.33832C16.3958 8.29769 15.957 8.43379 15.6167 8.71669C15.2763 8.99959 15.0623 9.40611 15.0216 9.84682C14.981 10.2875 15.1171 10.7263 15.4 11.0667L22.85 20L15.65 28.9334C15.4462 29.178 15.3167 29.4759 15.2769 29.7918C15.2371 30.1077 15.2887 30.4284 15.4254 30.716C15.5622 31.0035 15.7785 31.2459 16.0486 31.4144C16.3188 31.5828 16.6316 31.6704 16.95 31.6667Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="main_about_slider">
+                    <div class="main_about_portfolio">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="main_about_portfolio_left">
+                                    <div class="main_about_portfolio_after">
+                                        <div class="main_about_portfolio_after_picture">
+                                            <img src="./images/about/Group 838.png" alt="Portfolio-After"
+                                                class="main_about_portfolio_after_img">
+                                        </div>
+                                        <span class="main_portfolio_img_caption main_portfolio_img_caption--height">
+                                            After
+                                        </span>
+                                    </div>
+                                    <div class="main_about_portfolio_before">
+                                        <div class="main_about_portfolio_before_picture">
+                                            <img src="./images/about/Rectangle 2259.png" alt="Portfolio-Before"
+                                                class="main_about_portfolio_before_img">
+                                        </div>
+                                        <span class="main_portfolio_img_caption">
+                                            Before
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="main_about_portfolio_right">
+                                    <span class="main_about_portfolio_svgup">
+                                        <svg width="33" height="29" viewBox="0 0 33 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.375 3C10.875 6.78125 8.625 10.5 8.625 14.1562C8.625 17.4688 10.375 19.9844 13.875 21.7031C13.875 23.7344 13.2656 25.3281 12.0469 26.4844C10.8594 27.6094 9.34375 28.1719 7.5 28.1719C5.5 28.1719 3.84375 27.3906 2.53125 25.8281C1.21875 24.2656 0.5625 22.3281 0.5625 20.0156C0.5625 16.4219 1.67188 13.0312 3.89062 9.84375C6.10938 6.625 9.23438 3.5 13.2656 0.46875L15.375 3ZM32.6719 3C28.1719 6.78125 25.9219 10.5 25.9219 14.1562C25.9219 17.4688 27.6719 19.9844 31.1719 21.7031C31.1719 23.7344 30.5625 25.3281 29.3438 26.4844C28.1562 27.6094 26.6406 28.1719 24.7969 28.1719C22.7969 28.1719 21.1406 27.3906 19.8281 25.8281C18.5156 24.2656 17.8594 22.3281 17.8594 20.0156C17.8594 16.4219 18.9688 13.0312 21.1875 9.84375C23.4062 6.625 26.5312 3.5 30.5625 0.46875L32.6719 3Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                    <p class="main_about_portfolio_context">
+                                        A complete package to all the fitness freaks out there. Join soon and test
+                                        yourself. Vyayamshala’s layouts, environment and it’s surrounding itself plays
+                                        vital role to motivate and go beyond your limitation.
+                                    </p>
+                                    <div class="main_about_portfolio_detailed">
+                                        <span class="main_about_portfolio_svgstar">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                        </span>
+                                        <span class="main_about_portfolio_svgdown">
+                                            <svg width="33" height="29" viewBox="0 0 33 29" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.328125 25.5312C4.82812 21.75 7.07812 18.0312 7.07812 14.375C7.07812 11.0625 5.32812 8.54688 1.82812 6.82812C1.82812 4.79688 2.42188 3.21875 3.60938 2.09375C4.82812 0.9375 6.35938 0.359375 8.20312 0.359375C10.2031 0.359375 11.8594 1.14063 13.1719 2.70312C14.4844 4.26562 15.1406 6.20313 15.1406 8.51562C15.1406 12.1094 14.0312 15.5156 11.8125 18.7344C9.59375 21.9219 6.46875 25.0312 2.4375 28.0625L0.328125 25.5312ZM17.625 25.5312C22.125 21.75 24.375 18.0312 24.375 14.375C24.375 11.0625 22.625 8.54688 19.125 6.82812C19.125 4.79688 19.7188 3.21875 20.9062 2.09375C22.125 0.9375 23.6562 0.359375 25.5 0.359375C27.5 0.359375 29.1562 1.14063 30.4688 2.70312C31.7812 4.26562 32.4375 6.20313 32.4375 8.51562C32.4375 12.1094 31.3281 15.5156 29.1094 18.7344C26.8906 21.9219 23.7656 25.0312 19.7344 28.0625L17.625 25.5312Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <span class="main_about_portfolio_name">Jhon Doe, Student</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_about_portfolio">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="main_about_portfolio_left">
+                                    <div class="main_about_portfolio_after">
+                                        <div class="main_about_portfolio_after_picture">
+                                            <img src="./images/about/Group 838.png" alt="Portfolio-After"
+                                                class="main_about_portfolio_after_img">
+                                        </div>
+                                        <span class="main_portfolio_img_caption main_portfolio_img_caption--height">
+                                            After (ali)
+                                        </span>
+                                    </div>
+                                    <div class="main_about_portfolio_before">
+                                        <div class="main_about_portfolio_before_picture">
+                                            <img src="./images/about/Rectangle 2259.png" alt="Portfolio-Before"
+                                                class="main_about_portfolio_before_img">
+                                        </div>
+                                        <span class="main_portfolio_img_caption">
+                                            Before (ali)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="main_about_portfolio_right">
+                                    <span class="main_about_portfolio_svgup">
+                                        <svg width="33" height="29" viewBox="0 0 33 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.375 3C10.875 6.78125 8.625 10.5 8.625 14.1562C8.625 17.4688 10.375 19.9844 13.875 21.7031C13.875 23.7344 13.2656 25.3281 12.0469 26.4844C10.8594 27.6094 9.34375 28.1719 7.5 28.1719C5.5 28.1719 3.84375 27.3906 2.53125 25.8281C1.21875 24.2656 0.5625 22.3281 0.5625 20.0156C0.5625 16.4219 1.67188 13.0312 3.89062 9.84375C6.10938 6.625 9.23438 3.5 13.2656 0.46875L15.375 3ZM32.6719 3C28.1719 6.78125 25.9219 10.5 25.9219 14.1562C25.9219 17.4688 27.6719 19.9844 31.1719 21.7031C31.1719 23.7344 30.5625 25.3281 29.3438 26.4844C28.1562 27.6094 26.6406 28.1719 24.7969 28.1719C22.7969 28.1719 21.1406 27.3906 19.8281 25.8281C18.5156 24.2656 17.8594 22.3281 17.8594 20.0156C17.8594 16.4219 18.9688 13.0312 21.1875 9.84375C23.4062 6.625 26.5312 3.5 30.5625 0.46875L32.6719 3Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                    <p class="main_about_portfolio_context">
+                                        A complete package to all the fitness freaks out there. Join soon and test
+                                        yourself. Vyayamshala’s layouts, environment and it’s surrounding itself plays
+                                        vital role to motivate and go beyond your limitation.
+                                    </p>
+                                    <div class="main_about_portfolio_detailed">
+                                        <span class="main_about_portfolio_svgstar">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                        </span>
+                                        <span class="main_about_portfolio_svgdown">
+                                            <svg width="33" height="29" viewBox="0 0 33 29" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.328125 25.5312C4.82812 21.75 7.07812 18.0312 7.07812 14.375C7.07812 11.0625 5.32812 8.54688 1.82812 6.82812C1.82812 4.79688 2.42188 3.21875 3.60938 2.09375C4.82812 0.9375 6.35938 0.359375 8.20312 0.359375C10.2031 0.359375 11.8594 1.14063 13.1719 2.70312C14.4844 4.26562 15.1406 6.20313 15.1406 8.51562C15.1406 12.1094 14.0312 15.5156 11.8125 18.7344C9.59375 21.9219 6.46875 25.0312 2.4375 28.0625L0.328125 25.5312ZM17.625 25.5312C22.125 21.75 24.375 18.0312 24.375 14.375C24.375 11.0625 22.625 8.54688 19.125 6.82812C19.125 4.79688 19.7188 3.21875 20.9062 2.09375C22.125 0.9375 23.6562 0.359375 25.5 0.359375C27.5 0.359375 29.1562 1.14063 30.4688 2.70312C31.7812 4.26562 32.4375 6.20313 32.4375 8.51562C32.4375 12.1094 31.3281 15.5156 29.1094 18.7344C26.8906 21.9219 23.7656 25.0312 19.7344 28.0625L17.625 25.5312Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <span class="main_about_portfolio_name">Jhon Doe, Student</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_about_portfolio">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="main_about_portfolio_left">
+                                    <div class="main_about_portfolio_after">
+                                        <div class="main_about_portfolio_after_picture">
+                                            <img src="./images/about/Group 838.png" alt="Portfolio-After"
+                                                class="main_about_portfolio_after_img">
+                                        </div>
+                                        <span class="main_portfolio_img_caption main_portfolio_img_caption--height">
+                                            After (hossein)
+                                        </span>
+                                    </div>
+                                    <div class="main_about_portfolio_before">
+                                        <div class="main_about_portfolio_before_picture">
+                                            <img src="./images/about/Rectangle 2259.png" alt="Portfolio-Before"
+                                                class="main_about_portfolio_before_img">
+                                        </div>
+                                        <span class="main_portfolio_img_caption">
+                                            Before (hossein)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="main_about_portfolio_right">
+                                    <span class="main_about_portfolio_svgup">
+                                        <svg width="33" height="29" viewBox="0 0 33 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.375 3C10.875 6.78125 8.625 10.5 8.625 14.1562C8.625 17.4688 10.375 19.9844 13.875 21.7031C13.875 23.7344 13.2656 25.3281 12.0469 26.4844C10.8594 27.6094 9.34375 28.1719 7.5 28.1719C5.5 28.1719 3.84375 27.3906 2.53125 25.8281C1.21875 24.2656 0.5625 22.3281 0.5625 20.0156C0.5625 16.4219 1.67188 13.0312 3.89062 9.84375C6.10938 6.625 9.23438 3.5 13.2656 0.46875L15.375 3ZM32.6719 3C28.1719 6.78125 25.9219 10.5 25.9219 14.1562C25.9219 17.4688 27.6719 19.9844 31.1719 21.7031C31.1719 23.7344 30.5625 25.3281 29.3438 26.4844C28.1562 27.6094 26.6406 28.1719 24.7969 28.1719C22.7969 28.1719 21.1406 27.3906 19.8281 25.8281C18.5156 24.2656 17.8594 22.3281 17.8594 20.0156C17.8594 16.4219 18.9688 13.0312 21.1875 9.84375C23.4062 6.625 26.5312 3.5 30.5625 0.46875L32.6719 3Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                    <p class="main_about_portfolio_context">
+                                        A complete package to all the fitness freaks out there. Join soon and test
+                                        yourself. Vyayamshala’s layouts, environment and it’s surrounding itself plays
+                                        vital role to motivate and go beyond your limitation.
+                                    </p>
+                                    <div class="main_about_portfolio_detailed">
+                                        <span class="main_about_portfolio_svgstar">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.57324 2.00879C10.0223 0.626822 11.9777 0.626824 12.4268 2.00879L13.4434 5.1377C13.7781 6.16736 14.7376 6.86405 15.8203 6.86426H19.1104C20.5634 6.86426 21.1676 8.72399 19.9922 9.57812L17.3311 11.5117C16.4549 12.1483 16.0883 13.2766 16.4229 14.3066L17.4395 17.4355C17.8885 18.8175 16.3064 19.9664 15.1309 19.1123L12.4697 17.1787C11.6482 16.5819 10.5538 16.5451 9.69824 17.0674L9.53027 17.1787L6.86914 19.1123C5.69357 19.9664 4.11152 18.8175 4.56055 17.4355L5.57715 14.3066C5.91171 13.2766 5.5451 12.1483 4.66895 11.5117L2.00781 9.57812C0.832362 8.72399 1.4366 6.86426 2.88965 6.86426H6.17969C7.2624 6.86405 8.22188 6.16736 8.55664 5.1377L9.57324 2.00879Z"
+                                                    fill="#EFC61C" stroke="black" />
+                                            </svg>
+                                        </span>
+                                        <span class="main_about_portfolio_svgdown">
+                                            <svg width="33" height="29" viewBox="0 0 33 29" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.328125 25.5312C4.82812 21.75 7.07812 18.0312 7.07812 14.375C7.07812 11.0625 5.32812 8.54688 1.82812 6.82812C1.82812 4.79688 2.42188 3.21875 3.60938 2.09375C4.82812 0.9375 6.35938 0.359375 8.20312 0.359375C10.2031 0.359375 11.8594 1.14063 13.1719 2.70312C14.4844 4.26562 15.1406 6.20313 15.1406 8.51562C15.1406 12.1094 14.0312 15.5156 11.8125 18.7344C9.59375 21.9219 6.46875 25.0312 2.4375 28.0625L0.328125 25.5312ZM17.625 25.5312C22.125 21.75 24.375 18.0312 24.375 14.375C24.375 11.0625 22.625 8.54688 19.125 6.82812C19.125 4.79688 19.7188 3.21875 20.9062 2.09375C22.125 0.9375 23.6562 0.359375 25.5 0.359375C27.5 0.359375 29.1562 1.14063 30.4688 2.70312C31.7812 4.26562 32.4375 6.20313 32.4375 8.51562C32.4375 12.1094 31.3281 15.5156 29.1094 18.7344C26.8906 21.9219 23.7656 25.0312 19.7344 28.0625L17.625 25.5312Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <span class="main_about_portfolio_name">Jhon Doe, Student</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main_facility">
+                <h1 class="main_about_title">
+                    Our <span class="main_about_title_span">facilities</span>
+                </h1>
+                <div class="main_facility_context">
+                    <div class="main_facility_context_item">
+                        <div class="main_facility_context_item_picture">
+                            <img src="./images/facility/Rectangle 2277.png" alt="Lockers and towels"
+                                class="main_facility_context_item_img">
+                        </div>
+                        <div class="main_facility_context_item_explain">
+                            <h4 class="main_facility_context_item_title">Lockers and towels</h4>
+                            <p class="main_facility_context_item_text">Clean, safe and sanitary environment to keep your
+                                stuffs.</p>
+                        </div>
+                    </div>
+                    <div class="main_facility_context_item">
+                        <div class="main_facility_context_item_picture">
+                            <img src="./images/facility/Rectangle 2279.png" alt="Free Wifi"
+                                class="main_facility_context_item_img">
+                        </div>
+                        <div class="main_facility_context_item_explain">
+                            <h4 class="main_facility_context_item_title">Free Wifi</h4>
+                            <p class="main_facility_context_item_text">Stay connected to the world while you work
+                                yourself out.</p>
+                        </div>
+                    </div>
+                    <div class="main_facility_context_item">
+                        <div class="main_facility_context_item_picture">
+                            <img src="./images/facility/Rectangle 2281.png" alt="Complimentary Drinks"
+                                class="main_facility_context_item_img">
+                        </div>
+                        <div class="main_facility_context_item_explain">
+                            <h4 class="main_facility_context_item_title">Complimentary Drinks</h4>
+                            <p class="main_facility_context_item_text">We make sure that you stay hydrated so that you
+                                can push yourself to the limit.</p>
+                        </div>
+                    </div>
+                    <div class="main_facility_context_item">
+                        <div class="main_facility_context_item_picture">
+                            <img src="./images/facility/Rectangle 2278.png" alt="Hightech Gym"
+                                class="main_facility_context_item_img">
+                        </div>
+                        <div class="main_facility_context_item_explain">
+                            <h4 class="main_facility_context_item_title">Hightech Gym</h4>
+                            <p class="main_facility_context_item_text">Build yourself with the best available equipments
+                                in the market.</p>
+                        </div>
+                    </div>
+                    <div class="main_facility_context_item">
+                        <div class="main_facility_context_item_picture">
+                            <img src="./images/facility/Rectangle 2280.png" alt="Changing Room"
+                                class="main_facility_context_item_img">
+                        </div>
+                        <div class="main_facility_context_item_explain">
+                            <h4 class="main_facility_context_item_title">Changing Room</h4>
+                            <p class="main_facility_context_item_text">Sanitary changing room with proper privacy.</p>
+                        </div>
+                    </div>
+                    <div class="main_facility_context_item">
+                        <div class="main_facility_context_item_picture">
+                            <img src="./images/facility/Rectangle 2282.png" alt="Personal Trainer"
+                                class="main_facility_context_item_img">
+                        </div>
+                        <div class="main_facility_context_item_explain">
+                            <h4 class="main_facility_context_item_title">Personal Trainer</h4>
+                            <p class="main_facility_context_item_text">You benefit from the monthly care of a Personal
+                                Trainer.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main_trainer">
+                <h1 class="main_about_title">
+                    Meet our <span class="main_about_title_span">Trainers</span>
+                </h1>
+                <span class="main_trainer_link">View All</span>
+
+                <div class="main_trainer_slider">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/trainer/Rectangle 2257.png" class="d-block w-100" alt="Trainer">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="main_trainer_context_subtitle">Amir Shrestha</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/trainer/Rectangle 2258.png" class="d-block w-100" alt="Trainer">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="main_trainer_context_subtitle">Christina Thapa</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/trainer/Rectangle 2259.png" class="d-block w-100" alt="Trainer">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="main_trainer_context_subtitle">Sunil Chetri</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/trainer/Rectangle 2257 (1).png" class="d-block w-100" alt="Trainer">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="main_trainer_context_subtitle">Priya K.C</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/trainer/Rectangle 2258 (1).png" class="d-block w-100" alt="Trainer">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="main_trainer_context_subtitle"> Santosh Adhikari</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/trainer/Rectangle 2259 (1).png" class="d-block w-100" alt="Trainer">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="main_trainer_context_subtitle">Rina Pun</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+            <section class="main_join">
+                <h1 class="main_about_title">
+                    What’s <span class="main_about_title_span">Stopping</span> you?
+                </h1>
+                <div class="main_join_context">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="main_join_context_left">
+                                <img class="main_join_context_left_img" src="./images/join/Rectangle 2283.png"
+                                    alt="join">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="main_join_context_right">
+                                <h3 class="main_join_context_right_title">Become a part of our family</h3>
+                                <p class="main_join_context_right_content">Leave your details and we will get back to
+                                    you !</p>
+                                <div class="main_join_context_input">
+                                    <input class="form-control main_join_input" placeholder="Full name">
+                                </div>
+                                <div class="main_join_context_input">
+                                    <input class="form-control main_join_input" placeholder="Phone number">
+                                </div>
+                                <div class="main_join_context_button">
+                                    <button type="button" class="btn main_join_btn">Join Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <section class="footer_head">
+                <div class="row">
+                    <div class="con-sm-12 col-md-6 footer_head--center">
+                        <div class="footer_head_list">
+                            <ul class="footer_head_items">
+                                <li class="footer_head_item"><a href="#" class="footer_head_link">Home</a></li>
+                                <li class="footer_head_item"><a href="#" class="footer_head_link">About</a></li>
+                                <li class="footer_head_item"><a href="#" class="footer_head_link">Services</a></li>
+                                <li class="footer_head_item"><a href="#" class="footer_head_link">Team</a></li>
+                                <li class="footer_head_item"><a href="#" class="footer_head_link">FAQs</a></li>
+                                <li class="footer_head_item"><a href="#" class="footer_head_link">Careers</a></li>
+                                <li class="footer_head_item"><a href="#" class="footer_head_link">Contact Us</a></li>
+                            </ul>
+                            <div class="footer_head_contact">
+                                <h3 class="footer_head_contact_title">Contact</h3>
+                                <p class="footer_head_contact_content">Lakeside 15th street Pokhara, Nepal
+                                    +977-[0]61-467701</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-sm-12 col-md-6">
+                        <div class="footer_head_image">
+                            <img src="./images/footer/Rectangle 40.png" alt="Map" class="footer_head_img">
+                            <span class="footer_head_map">Map</span>
+                            <span class="footer_head_location_svg">
+                                <svg width="74" height="73" viewBox="0 0 74 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M54.0334 29.5143C54.0334 20.0699 46.7022 12.3877 37.6886 12.3877C28.675 12.3877 21.3428 20.0699 21.3428 29.5184C21.3459 29.9898 21.5731 41.2886 34.6649 61.1973C34.9344 61.7432 35.3428 62.2109 35.8503 62.5546C36.3577 62.8982 36.9469 63.1062 37.5601 63.1582C39.4513 63.1582 40.7401 61.104 40.8655 60.8952C54.0406 40.9743 54.0406 29.9635 54.0334 29.5143ZM37.6886 36.4118C36.2488 36.4118 34.8413 35.9906 33.6441 35.2014C32.4469 34.4123 31.5139 33.2907 30.9629 31.9784C30.4119 30.6661 30.2678 29.2221 30.5488 27.829C30.8298 26.436 31.5232 25.1564 32.5414 24.1521C33.5596 23.1478 34.8568 22.4639 36.269 22.1869C37.6812 21.9099 39.145 22.0523 40.4752 22.596C41.8053 23.1397 42.9422 24.0603 43.742 25.2414C44.5418 26.4225 44.9686 27.811 44.9684 29.2314C44.9662 31.1353 44.1985 32.9606 42.8337 34.3067C41.4689 35.6528 39.6186 36.4099 37.6886 36.4118Z" fill="#D22F27"/>
+                                    <path d="M54.0334 29.5143C54.0334 20.0699 46.7022 12.3877 37.6886 12.3877C36.3466 12.3934 35.0111 12.5723 33.7162 12.92C42.3444 13.3762 49.2357 20.8516 49.2357 30.004C49.2419 30.4532 49.2419 41.464 36.0668 61.3839C35.8895 61.6695 35.688 61.9398 35.4645 62.1919C35.7292 62.485 36.0516 62.7218 36.4121 62.8881C36.7725 63.0544 37.1635 63.1466 37.5612 63.1592C39.4512 63.1592 40.7401 61.104 40.8655 60.8952C54.0406 40.9743 54.0406 29.9635 54.0334 29.5143Z" fill="#EA5A47"/>
+                                    <path d="M37.6886 36.4118C36.2488 36.4118 34.8413 35.9906 33.6441 35.2015C32.4469 34.4123 31.5139 33.2907 30.9629 31.9784C30.4119 30.6661 30.2678 29.2221 30.5488 27.8291C30.8298 26.436 31.5232 25.1564 32.5414 24.1521C33.5596 23.1478 34.8568 22.4639 36.269 22.1869C37.6812 21.91 39.145 22.0523 40.4752 22.596C41.8053 23.1397 42.9422 24.0603 43.742 25.2414C44.5418 26.4225 44.9686 27.8111 44.9684 29.2315C44.9662 31.1353 44.1985 32.9606 42.8337 34.3067C41.4689 35.6529 39.6186 36.4099 37.6886 36.4118Z" fill="#171717"/>
+                                    </svg>                                    
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer_bottom">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <p class="footer_bottom_date">Copyright @ 2021 Vyayamshala</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                       <div class="footer_bootom_icons">
+                        <a href="#" class="footer_bottom_icon">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.9346 29.7558V18.172H22.8425L23.4234 13.6366H18.9346V10.7477C18.9346 9.43896 19.2993 8.5429 21.1776 8.5429H23.5577V4.49931C22.3996 4.37521 21.2356 4.31529 20.0709 4.31982C16.6167 4.31982 14.2451 6.42853 14.2451 10.2997V13.6281H10.3627V18.1636H14.2536V29.7558H18.9346Z"
+                                    fill="#4C7AEF" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer_bottom_icon">
+                            <svg width="35" height="34" viewBox="0 0 35 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26.0635 7.14765H9.57399C6.33743 7.14765 3.71567 9.74115 3.71567 12.941V21.0931C3.71567 24.293 6.33884 26.8879 9.57399 26.8879H26.0635C29.3001 26.8879 31.9218 24.293 31.9218 21.0931V12.941C31.9218 9.74115 29.2987 7.14624 26.0635 7.14624V7.14765ZM22.1019 17.4128L14.3893 21.0522C14.3422 21.0748 14.2902 21.0852 14.2381 21.0823C14.1859 21.0795 14.1354 21.0635 14.0911 21.0358C14.0468 21.0082 14.0102 20.9698 13.9848 20.9242C13.9593 20.8786 13.9458 20.8274 13.9455 20.7751V13.2717C13.9464 13.2192 13.9606 13.1678 13.9868 13.1223C14.0129 13.0768 14.0502 13.0387 14.095 13.0115C14.1399 12.9842 14.1909 12.9688 14.2434 12.9666C14.2958 12.9644 14.3479 12.9755 14.3949 12.9989L22.109 16.8644C22.1603 16.89 22.2034 16.9296 22.2333 16.9786C22.2632 17.0277 22.2787 17.0841 22.278 17.1415C22.2772 17.1989 22.2603 17.255 22.2292 17.3032C22.198 17.3514 22.1539 17.3899 22.1019 17.4142V17.4128Z"
+                                    fill="#DF2424" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer_bottom_icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.4532 12.1206C14.2244 12.1206 12.4055 13.9395 12.4055 16.1683C12.4055 18.397 14.2244 20.2159 16.4532 20.2159C18.682 20.2159 20.5008 18.397 20.5008 16.1683C20.5008 13.9395 18.682 12.1206 16.4532 12.1206ZM28.5931 16.1683C28.5931 14.4921 28.6082 12.8312 28.5141 11.1581C28.42 9.2147 27.9766 7.48998 26.5556 6.0689C25.1315 4.64479 23.4098 4.2045 21.4664 4.11037C19.7903 4.01624 18.1293 4.03142 16.4562 4.03142C14.7801 4.03142 13.1191 4.01624 11.446 4.11037C9.50267 4.2045 7.77794 4.64783 6.35687 6.0689C4.93275 7.49302 4.49246 9.2147 4.39833 11.1581C4.3042 12.8342 4.31938 14.4952 4.31938 16.1683C4.31938 17.8414 4.3042 19.5054 4.39833 21.1785C4.49246 23.1218 4.93579 24.8465 6.35687 26.2676C7.78098 27.6917 9.50267 28.132 11.446 28.2261C13.1222 28.3203 14.7831 28.3051 16.4562 28.3051C18.1324 28.3051 19.7933 28.3203 21.4664 28.2261C23.4098 28.132 25.1345 27.6887 26.5556 26.2676C27.9797 24.8435 28.42 23.1218 28.5141 21.1785C28.6113 19.5054 28.5931 17.8444 28.5931 16.1683ZM16.4532 22.3961C13.0068 22.3961 10.2253 19.6147 10.2253 16.1683C10.2253 12.7218 13.0068 9.94042 16.4532 9.94042C19.8996 9.94042 22.681 12.7218 22.681 16.1683C22.681 19.6147 19.8996 22.3961 16.4532 22.3961ZM22.9361 11.1398C22.1314 11.1398 21.4816 10.49 21.4816 9.68536C21.4816 8.88069 22.1314 8.23088 22.9361 8.23088C23.7407 8.23088 24.3906 8.88069 24.3906 9.68536C24.3908 9.87643 24.3533 10.0657 24.2803 10.2422C24.2073 10.4188 24.1002 10.5793 23.9651 10.7144C23.83 10.8495 23.6695 10.9566 23.493 11.0296C23.3164 11.1026 23.1272 11.1401 22.9361 11.1398Z"
+                                    fill="#E9E9E9" />
+                            </svg>
+                        </a>
+                       </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <p class="author_item">Created by Brandbuilder</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <script src="./script/app.js"></script>
+    <script src="./script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
