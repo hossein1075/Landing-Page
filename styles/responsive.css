@@ -122,6 +122,27 @@
                         align-items: center;
                         flex-direction: column;
                     }
+
+                    /* footer bottom */
+
+                    .footer_bottom {
+                        display: block;
+                    }
+                    .footer_bottom_date {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        }
+                        .footer_bootom_icons {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        }
+                        .author_item {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                    }
                     
  }
 

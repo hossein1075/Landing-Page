@@ -774,19 +774,27 @@ object-fit: cover;
 
 /* section 2 */
 .footer_bottom {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer_bottom_date {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer_bootom_icons {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer_bottom_icon {
-
+    
 }
 .author_item {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
     
 
