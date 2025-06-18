@@ -35,18 +35,18 @@
                 </div>
                 <div class="nav_Menu">
                     <ul class="nav_menu_lists">
-                        <li class="nav_menu_list"><a href="#" class="nav_menu_link">Home</a></li>
-                        <li class="nav_menu_list"><a href="#" class="nav_menu_link">About</a></li>
-                        <li class="nav_menu_list"><a href="#" class="nav_menu_link">Reviews</a></li>
+                        <li class="nav_menu_list"><a href="#home" class="nav_menu_link">Home</a></li>
+                        <li class="nav_menu_list"><a href="#about" class="nav_menu_link">About</a></li>
+                        <li class="nav_menu_list"><a href="#reviews" class="nav_menu_link">Reviews</a></li>
                         <li class="nav_menu_list dropdown" id="navbarScrollingDropdown" data-bs-toggle="dropdown">
                             <a href="#" class="nav_menu_link dropdown-toggle">Services</a>
                             <ul class="nav_dropdown_links dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="nav_dropdown_link dropdown-item" href="#">Action</a></li>
-                                <li><a class="nav_dropdown_link dropdown-item" href="#">Another action</a></li>
-                                <li><a class="nav_dropdown_link dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="nav_dropdown_link dropdown-item" href="#facility">Our facilities</a></li>
+                                <li><a class="nav_dropdown_link dropdown-item" href="#trainer">Meet our Trainers</a></li>
+                                <li><a class="nav_dropdown_link dropdown-item" href="#join">What’s Stopping you?</a></li>
                             </ul>
                         </li>
-                        <li class="nav_menu_list"><a href="#" class="nav_menu_link">Contact</a></li>
+                        <li class="nav_menu_list"><a href="#contact" class="nav_menu_link">Contact</a></li>
                     </ul>
                 </div>
 
@@ -84,7 +84,7 @@
         </header>
 
         <main class="main">
-            <section class="main_explain">
+            <section id="home" class="main_explain">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 order-md-2">
                         <div class="main_explain_picture">
@@ -133,7 +133,7 @@
                         </div>
                     </div>
             </section>
-            <section class="main_services">
+            <section id="reviews" class="main_services">
                 <h3 class="main_services_header">Services</h3>
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
@@ -193,7 +193,7 @@
                         <a href="#" class="main_services_link">See All</a>
                     </div>
             </section>
-            <section class="main_about">
+            <section id="about" class="main_about">
                 <h1 class="main_about_title main_about_title--break">
                     Stories of our <span class="main_about_title_span">Vyayamshala</span> Family
                 </h1>
@@ -474,7 +474,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main_facility">
+            <section id="facility" class="main_facility">
                 <h1 class="main_about_title">
                     Our <span class="main_about_title_span">facilities</span>
                 </h1>
@@ -546,7 +546,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main_trainer">
+            <section id="trainer" class="main_trainer">
                 <h1 class="main_about_title">
                     Meet our <span class="main_about_title_span">Trainers</span>
                 </h1>
@@ -620,7 +620,7 @@
 
                 </div>
             </section>
-            <section class="main_join">
+            <section id="join" class="main_join">
                 <h1 class="main_about_title">
                     What’s <span class="main_about_title_span">Stopping</span> you?
                 </h1>
@@ -655,7 +655,7 @@
         </main>
 
         <footer class="footer">
-            <section class="footer_head">
+            <section id="contact" class="footer_head">
                 <div class="row">
                     <div class="con-sm-12 col-md-6 footer_head--center">
                         <div class="footer_head_list">
@@ -692,11 +692,9 @@
             </section>
 
             <section class="footer_bottom">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
+                    <div class="footer_date">
                         <p class="footer_bottom_date">Copyright @ 2021 Vyayamshala</p>
                     </div>
-                    <div class="col-sm-12 col-md-4">
                        <div class="footer_bootom_icons">
                         <a href="#" class="footer_bottom_icon">
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
@@ -723,11 +721,9 @@
                             </svg>
                         </a>
                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
+                    <div class="footer_author">
                         <p class="author_item">Created by Brandbuilder</p>
                     </div>
-                </div>
             </section>
         </footer>
     </div>

@@ -10,6 +10,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     font-size: 1.6rem;
     background-color: var(--bgc-color);
 }
+
 
 *,
 *::after,
@@ -33,7 +35,10 @@ ul {
     /* padding-left: 0; */
     margin: 0;
 }
-
+section {
+    scroll-margin-top: 40px; /* تنظیم بسته به ارتفاع نوبار شما */
+  }
+  
 .container {}
 
 /* ////////////////////// */
@@ -774,27 +779,31 @@ object-fit: cover;
 
 /* section 2 */
 .footer_bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 6rem;
+}
+.footer_date {
+margin-bottom: 1.5rem;
+}
+.footer_author {
+
 }
 .footer_bottom_date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+color: var(--body-color);
+font-size: 1.6rem;
 }
 .footer_bootom_icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+margin-bottom: 1.5rem;
 }
 .footer_bottom_icon {
     
 }
 .author_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: var(--body-color);
+    font-size: 1.6rem;
 }
     
 

@@ -126,22 +126,20 @@
                     /* footer bottom */
 
                     .footer_bottom {
-                        display: block;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        border-top: .1rem solid var(--body-color);
+                        margin-top: 9rem;
+                        padding-top: 1.8rem;
                     }
                     .footer_bottom_date {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
+                       
                         }
                         .footer_bootom_icons {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                       
                         }
                         .author_item {
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
+                       
                     }
                     
  }
