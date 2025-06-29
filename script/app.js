@@ -11,7 +11,7 @@ let slider = $.querySelector('.main_about_slider');
 
 let currentIndex = 0;
 let autoContect;
-
+// menu nav mobile
 document.addEventListener("DOMContentLoaded", () => {
     const navbarBtn = document.querySelector("#btn-navbar");
     const navRemoveBtn = document.querySelector("#nav-remove");
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       navToggle.classList.remove("nav_toggle-active");
     });
   });
-
+//  slider section about
 function showItem(index, move) {
 
     slidItem.forEach((slide) => {
@@ -84,7 +84,7 @@ preBtn.addEventListener('click', (e) => {
 
 showItem(currentIndex);
 autoSlide()
-
+//  dropdown href
 document.querySelectorAll('.nav_dropdown_link').forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
