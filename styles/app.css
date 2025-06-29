@@ -60,6 +60,7 @@ section {
     right: 0;
     top: 0;
     padding: 0 3rem;
+    z-index: 100;
 }
 
 .nav_logo {
@@ -332,7 +333,7 @@ color: var(--section-explain);
 /* Section 2 */
 
 .main_services {
-    padding-top: 4rem;
+    
 }
 .main_services_header {
 color: var(--subtitle-color);
@@ -393,7 +394,7 @@ padding-top: .7rem;
 /* Section 3 */
 
 .main_about {
-    padding-top: 4rem;
+    
 }
 .main_about_title {
 color: var(--body-color);
@@ -579,7 +580,6 @@ color: #C4C4C4;
 
 /* section 4 */
 .main_facility {
-    padding-top: 9rem;
     padding-bottom: 9rem;
 }
 .main_facility_context {
