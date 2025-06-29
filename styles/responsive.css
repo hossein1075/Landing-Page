@@ -16,6 +16,9 @@
        align-items: center;
       column-gap: 2rem;
         }
+        .main_facility_context_item_picture {
+            max-width: 16rem;
+        }
 }
 @media (min-width: 576px) { 
     /* *{
@@ -25,6 +28,10 @@
             grid-template-columns: repeat(2,1fr);
             }
 
+            .footer_head_map {
+                height: 3.6rem;
+                width: 7.5rem;
+            }
 }
 
  

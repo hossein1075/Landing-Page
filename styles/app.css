@@ -203,19 +203,34 @@ section {
     background-color: #F4F4F4;
     border: none;
 }
-/* بازنویسی استایل‌های بوت‌استرپ */
+/* برای li اصلی */
 .nav_menu_list-desktop.dropdown {
-    margin-bottom: 0;
-    transition: margin-bottom 0.3s ease;
+    transition: margin-bottom 0.3s ease-in-out;
+    margin-bottom: 1.4rem;
   }
   
   .nav_menu_list-desktop.dropdown.show {
-    margin-bottom: 10rem; /* ارتفاع دراپ‌داون */
+    margin-bottom: 10rem; /* باز شدن نرم */
   }
   
+  /* برای خود منوی دراپ‌دان */
   .dropdown-menu {
     margin-top: 0 !important;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+    display: block !important; /* برای اینکه opacity کار کنه */
+    visibility: hidden;
+    pointer-events: none;
   }
+  
+  .dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
 
 
 /* ////////////////////// */
@@ -265,6 +280,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding-bottom: 1.6rem;
+gap: .5rem;
 }
 .main_explain_Btn_left {
 background-color: var(--subtitle-color);
@@ -390,6 +406,7 @@ padding-top: .7rem;
     justify-content: center;
     align-items: center;
     color: #02090F;
+    margin-bottom: .5rem;
 }
 /* Section 3 */
 
@@ -600,7 +617,7 @@ color: #C4C4C4;
 .main_facility_context_item_picture {
     width: 100%;
     height: auto;
-    max-width: 25rem;
+    max-width: 13rem;
 }
 .main_facility_context_item_img {
     width: 100%;
@@ -764,8 +781,8 @@ object-fit: cover;
     justify-content: center;
     align-items: center;
     background-color: var(--body-color);
-    height: 3.6rem;
-    width: 7.5rem;
+    height: 2.6rem;
+    width: 5.5rem;
     margin-top: .5rem;
     margin-left: .8rem;
 }
