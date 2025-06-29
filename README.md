@@ -11,7 +11,3 @@ The project includes custom styles and scripts to enhance user experience and vi
 You can check out the live demo of the project here:
 
 🔗 [View Demo](https://hossein1075.github.io/Landing-Page/)
-
----
-
-This project is under active development and will be updated regularly.
